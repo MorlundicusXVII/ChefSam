@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="static/style/style.css">
+    <title>ChefSammy</title>
 </head>
 <body>
-    <div id="chat"></div>
-    <div>
-        <input type="text" name="" id="message">
-        <button onclick="send()">invia</button>
-    </div>
-    
+    <main>
+        <div id="chatdiv">
+            
+        </div>
+        <div id="textinput">
+            <form method="post" id="textform" >
+                <input type="text" id="textfield">
+                <button type="submit" disabled style="display: none" aria-hidden="true"></button>
+            </form>
+            <button id="send" onclick="send()"><b>SEND</b></button>
+        </div>
+
+        
+    </main>
+    <script src="../js/index.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
